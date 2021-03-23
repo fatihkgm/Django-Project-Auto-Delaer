@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'autodealer.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgressql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cardealer_db',
         'USER': 'postgres',
         'PASSWORD': '123',
