@@ -133,31 +133,26 @@
                             <a href="car-details.html" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                                    <span class="del"><del>$805.00</del></span>
-                                    <br>
-                                    <span>$780.00</span>
+                                    <span>${{car.price}}</span>
                                 </div>
-                                <img class="d-block w-100" src="{% static 'img/car/car-1.jpg' %}" alt="car">
+                                <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car">
                             </a>
                             <div class="carbox-overlap-wrapper">
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="{% static 'img/car/car-1.jpg' %}" class="overlap-btn">
+                                            <a href="https://i.ibb.co/wssbNW8/evgeny-tchebotarev-aiwu-Lj-LPFn-U-unsplash.jpg" class="overlap-btn">
                                                 <i class="fa fa-expand"></i>
-                                                <img class="hidden" src="{% static 'img/car/car-1.jpg' %}">
+                                                <img class="hidden" src="https://i.ibb.co/wssbNW8/evgeny-tchebotarev-aiwu-Lj-LPFn-U-unsplash.jpg">
                                             </a>
-                                            <a href="{% static 'img/car/car-2.jpg' %}" class="hidden">
-                                                <img class="hidden" src="{% static 'img/car/car-2.jpg' %}">
+                                            <a href="https://i.ibb.co/fr4cj1M/jake-givens-i-R8m2-RRo-z4-unsplash.jpg" class="hidden">
+                                                <img class="hidden" src="https://i.ibb.co/fr4cj1M/jake-givens-i-R8m2-RRo-z4-unsplash.jpg">
                                             </a>
-                                            <a href="{% static 'img/car/car-3.jpg' %}" class="hidden">
-                                                <img class="hidden" src="{% static 'img/car/car-3.jpg' %}">
+                                            <a href="https://i.ibb.co/YWwXM8g/stefan-rodriguez-2-Aovfz-YV3rc-unsplash.jpg" class="hidden">
+                                                <img class="hidden" src="https://i.ibb.co/YWwXM8g/stefan-rodriguez-2-Aovfz-YV3rc-unsplash.jpg">
                                             </a>
-                                            <a href="{% static 'img/car/car-4.jpg' %}" class="hidden">
-                                                <img class="hidden" src="{% static 'img/car/car-4.jpg' %}">
-                                            </a>
-                                            <a href="{% static 'img/car/car-5.jpg' %}" class="hidden">
-                                                <img class="hidden" src="{% static 'img/car/car-5.jpg' %}">
+                                            <a href="https://i.ibb.co/jvkJwWf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg" class="hidden">
+                                                <img class="hidden" src="https://i.ibb.co/jvkJwWf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg">
                                             </a>
                                         </div>
                                     </div>
@@ -166,20 +161,19 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Lamborghini Huracán</a>
+                                <a href="car-details.html">{{car.car_title}}</a>
                             </h1>
                             <div class="location">
                                 <a href="car-details.html">
-                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                                    <i class="flaticon-pin"></i>{{car.city}}
                                 </a>
                             </div>
                             <ul class="facilities-list clearfix">
-                                <li>Petrol</li>
-                                <li>4,000 km</li>
-                                <li>Manual</li>
-                                <li>Sport</li>
-                                <li>white</li>
-                                <li>2020</li>
+                                <li>{{car.fuel_type}}</li>
+                                <li>{{car.miles}}</li>
+                                <li>{{car.transmission}}</li>
+                               
+                                <li>{{car.year}}</li>
                             </ul>
                         </div>
                     </div>
@@ -214,17 +208,17 @@
                     <div class="car-thumbnail">
                         <a href="car-details.html" class="car-img">
                             <div class="tag">For Sale</div>
-                            <img class="d-block w-100" src="{% static 'img/car/car-1.jpg' %}" alt="car">
+                            <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car">
                             <div class="facilities-list clearfix">
                                 <ul>
                                     <li>
-                                        <span><i class="flaticon-way"></i></span>4,000 km
+                                        <span><i class="flaticon-way"></i></span>${{car.price}}
                                     </li>
                                     <li>
-                                        <span><i class="flaticon-calendar-1"></i></span>2020
+                                        <span><i class="flaticon-calendar-1"></i></span>{{car.year}}
                                     </li>
                                     <li>
-                                        <span><i class="flaticon-manual-transmission"></i></span>Manual
+                                        <span><i class="flaticon-manual-transmission"></i></span>{{car.transmission}}
                                     </li>
                                 </ul>
                             </div>
@@ -256,20 +250,20 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Lamborghini Huracán</a>
+                            <a href="car-details.html">{{car.car_title}}</a>
                         </h1>
                         <div class="location">
                             <a href="car-details.html">
-                                <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                                <i class="flaticon-pin"></i>{{car.city}},
                             </a>
                         </div>
                     </div>
                     <div class="footer clearfix">
                         <div class="pull-left ratings days">
-                            <p class="cartype">Sedan</p>
+                            <p class="cartype">{{car.miles}}km</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">$850.00</p>
+                            <p class="price">${{car.price}}</p>
                         </div>
                     </div>
                 </div>
@@ -297,7 +291,7 @@
                     <div class="team-1">
                         <div class="photo">
                             <a href="#">
-                                <img src="{{team.photo.url}}" alt="team-1" class="img-fluid">
+                                <img src="{{team.photo.url}}" alt="team-1" class="img-fluid" style="min-height: 300px; max-height: 300px;">
                             </a>
                             <div class="social-list clearfix">
                                 <a href="{{team.facebook_link}}" class="facebook-bg"><i class="fa fa-facebook"></i></a>
@@ -306,7 +300,7 @@
                             </div>
                         </div>
                         <div class="details">
-                            <h4><a href="team-detail.html">{{team.firstname}} {{team.last_name}}</a></h4>
+                            <h4><a href="team-detail.html">{{team.first_name}} {{team.last_name}}</a></h4>
                             <h5>{{team.designation}}</h5>
                         </div>
                     </div>
