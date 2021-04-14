@@ -5,7 +5,7 @@
 
 ![ban](https://i.ibb.co/88rVgq7/autodealer.gif)
  
-<p align="center">The goal of the project is to design and build a website for a car business owner who wants to list his cars on his website and allow the user to come to his site and browse through all of his latest cars and featured cars, search and filter the cars by model or price, and make some inquiries about his cars that are out for the sale.I purchased a Bootstrap template (themeforest) and turn it into our my project's front-end.I also  customizez the default Django admin panel and make it a feature-rich, good-looking admin area. Implemented Login with Google & Login with Facebook.</p>
+<p align="center">The goal of the project is to design and build a website for a car business owner who wants to list his cars on his website and allow the user to come to his site and browse through all of his latest cars and featured cars, search and filter the cars by model or price, and make some inquiries about his cars that are out for the sale.I purchased a Bootstrap template (themeforest) and turn it into  my project's front-end.I also  customizez the default Django admin panel and make it a feature-rich, good-looking admin area. Implemented Login with Google & Login with Facebook.</p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python%20-%23F05033.svg?&style=for-the-badge&logo=python&logoColor=white"/>
