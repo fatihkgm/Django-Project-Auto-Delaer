@@ -1,5 +1,6 @@
 # Django-Project-Auto.-Delaer
 
+<<<<<<< Updated upstream
 <h2 align="center">Currently Working on this Auto Dealership App</h2>
 <p align="center"> 📌  Django Project with PostgreSQL  </p>
 
@@ -30,3 +31,6 @@ Send Emails </p>
 
 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/63836841/114633217-241b7380-9c8e-11eb-8703-f2272a40cb73.gif)
+=======
+test1
+>>>>>>> Stashed changes
