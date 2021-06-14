@@ -1,7 +1,7 @@
 # Django-Project-Auto.-Delaer
 
 <<<<<<< Updated upstream
-<h2 align="center">Currently Working on this Auto Dealership App</h2>
+<h2 align="center">Auto Dealership App</h2>
 <p align="center"> 📌  Django Project with PostgreSQL  </p>
 
 ![ban](https://i.ibb.co/88rVgq7/autodealer.gif)
